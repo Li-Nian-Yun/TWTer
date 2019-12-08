@@ -54,7 +54,7 @@ class ViewController2: UIViewController {
     }
     
     
-    // 进度条
+    //    进度条
     lazy var progressView:UIProgressView = {
         let progress = UIProgressView()
         progress.progressTintColor = UIColor.orange
