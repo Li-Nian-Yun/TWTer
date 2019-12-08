@@ -1,0 +1,6 @@
+framework module Pods_____1_0 {
+  umbrella header "Pods-知乎日报1.0-umbrella.h"
+
+  export *
+  module * { export * }
+}

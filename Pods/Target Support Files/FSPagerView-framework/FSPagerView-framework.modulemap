@@ -1,0 +1,6 @@
+framework module FSPagerView {
+  umbrella header "FSPagerView-framework-umbrella.h"
+
+  export *
+  module * { export * }
+}

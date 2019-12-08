@@ -1,0 +1,14 @@
+
+platform :ios, '11.0'
+
+
+pod 'Alamofire'
+pod 'SDWebImage'
+pod 'MJRefresh'
+pod 'SwiftLint'
+pod 'SwiftyJSON'
+pod 'FSPagerView'
+target '知乎日报1.0' do 
+use_frameworks!
+end
+
