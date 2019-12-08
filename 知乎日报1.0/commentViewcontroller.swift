@@ -13,7 +13,6 @@ import SDWebImage
 import WebKit
 
 class commentViewController: UIViewController {
-
     fileprivate var currentTabelView:UITableView?
     fileprivate var dataModel:Main?
     fileprivate var dataArray:NSMutableArray?
@@ -22,8 +21,6 @@ class commentViewController: UIViewController {
     "https://pic4.zhimg.com/05ed7f110ed96b938483132871e2a343.jpg"
     let header = MJRefreshNormalHeader()
     var TableView = UITableView()
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white

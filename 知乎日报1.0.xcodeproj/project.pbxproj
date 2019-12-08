@@ -10,7 +10,7 @@
 		8B4724EF239BCDE600345944 /* SwiftNetWorkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4724EE239BCDE600345944 /* SwiftNetWorkManager.swift */; };
 		8B4724F1239C9B1400345944 /* commentViewcontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4724F0239C9B1400345944 /* commentViewcontroller.swift */; };
 		8B4E5D26239B61F800F2AFD7 /* PageControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4E5D25239B61F800F2AFD7 /* PageControlView.swift */; };
-		8B5229772392BC20007956F4 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5229762392BC20007956F4 /* ViewController2.swift */; };
+		8B5DAED2239CF8CD004CE2AD /* ViewController2的副本.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5DAED1239CF8CD004CE2AD /* ViewController2的副本.swift */; };
 		8BE52D02238CFC550017D0CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE52D01238CFC550017D0CE /* AppDelegate.swift */; };
 		8BE52D04238CFC550017D0CE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE52D03238CFC550017D0CE /* SceneDelegate.swift */; };
 		8BE52D06238CFC550017D0CE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE52D05238CFC550017D0CE /* ViewController.swift */; };
@@ -27,7 +27,7 @@
 		8B4724EE239BCDE600345944 /* SwiftNetWorkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftNetWorkManager.swift; sourceTree = "<group>"; };
 		8B4724F0239C9B1400345944 /* commentViewcontroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = commentViewcontroller.swift; sourceTree = "<group>"; };
 		8B4E5D25239B61F800F2AFD7 /* PageControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageControlView.swift; sourceTree = "<group>"; };
-		8B5229762392BC20007956F4 /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
+		8B5DAED1239CF8CD004CE2AD /* ViewController2的副本.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController2的副本.swift"; sourceTree = "<group>"; };
 		8BAD267B238FCE6900EBDE2A /* MJRefresh.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MJRefresh.h; sourceTree = "<group>"; };
 		8BE52CFE238CFC550017D0CE /* 知乎日报1.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "知乎日报1.0.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BE52D01238CFC550017D0CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -85,7 +85,7 @@
 				8BE52D01238CFC550017D0CE /* AppDelegate.swift */,
 				8BE52D03238CFC550017D0CE /* SceneDelegate.swift */,
 				8BE52D05238CFC550017D0CE /* ViewController.swift */,
-				8B5229762392BC20007956F4 /* ViewController2.swift */,
+				8B5DAED1239CF8CD004CE2AD /* ViewController2的副本.swift */,
 				8B4724F0239C9B1400345944 /* commentViewcontroller.swift */,
 				8B4E5D25239B61F800F2AFD7 /* PageControlView.swift */,
 				8B4724EE239BCDE600345944 /* SwiftNetWorkManager.swift */,
@@ -223,10 +223,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8B5229772392BC20007956F4 /* ViewController2.swift in Sources */,
 				8BE52D06238CFC550017D0CE /* ViewController.swift in Sources */,
 				8BE52D02238CFC550017D0CE /* AppDelegate.swift in Sources */,
 				8BE52D04238CFC550017D0CE /* SceneDelegate.swift in Sources */,
+				8B5DAED2239CF8CD004CE2AD /* ViewController2的副本.swift in Sources */,
 				8BE52D1B238D62A80017D0CE /* Model.swift in Sources */,
 				8B4724EF239BCDE600345944 /* SwiftNetWorkManager.swift in Sources */,
 				8B4724F1239C9B1400345944 /* commentViewcontroller.swift in Sources */,

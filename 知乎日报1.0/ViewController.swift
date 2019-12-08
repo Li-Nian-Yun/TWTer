@@ -21,28 +21,24 @@ class ViewController: UIViewController,SliderGalleryControllerDelegate {
     //图片轮播组件
     var sliderGallery : SliderGalleryController!
 
-    
     fileprivate var currentTabelView:UITableView?
     fileprivate var dataModel:Main?
     fileprivate var dataArray:NSMutableArray?
-    
     
     let imgUrlError =
     "https://pic4.zhimg.com/05ed7f110ed96b938483132871e2a343.jpg"
     let header = MJRefreshNormalHeader()
     let pageControl = UIPageControl(frame: CGRect(x: 0, y: 50, width: 500, height: 150))
     var TableView = UITableView()
-    var scrollView = UIScrollView(frame:CGRect(x: 0, y: 50, width: 420, height: 280))
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
         navigationItem.title = "知乎日报"
+    
         loadNewData()
         initTable()
-        scrollView.isPagingEnabled = true
-        //        initPageControl()
+    
         header.setRefreshingTarget(self, refreshingAction: #selector(ViewController.headerRefresh))
         self.TableView.mj_header = header
         self.TableView.reloadData()
@@ -82,7 +78,6 @@ class ViewController: UIViewController,SliderGalleryControllerDelegate {
         sliderGallery.view.addGestureRecognizer(tap)
     }
     
-    
     //下拉刷新
     @objc func headerRefresh(){
         sleep(1)
@@ -91,6 +86,7 @@ class ViewController: UIViewController,SliderGalleryControllerDelegate {
         self.TableView.reloadData()
         header.endRefreshing()
     }
+    
     //加载数据
     func loadNewData(){
         let urlString = "https://news-at.zhihu.com/api/4/news/latest"
@@ -112,6 +108,7 @@ class ViewController: UIViewController,SliderGalleryControllerDelegate {
             }
         
         }
+    
     func galleryScrollerViewSize() -> CGSize {
         return CGSize(width: screenWidth, height: (screenWidth-20)/4*3)
     }
@@ -147,7 +144,6 @@ extension ViewController:UITableViewDelegate,UITableViewDataSource{
         as UITableViewCell
         cell.accessoryType = .disclosureIndicator
         cell.textLabel?.text = dataModel?.stories[indexPath.row].title ?? "数据还没来，刷新一下试试"
-        
         let imgUrlError =
         "https://pic4.zhimg.com/05ed7f110ed96b938483132871e2a343.jpg"
         let imgUrl = dataModel?.stories[indexPath.row].images?[0]
@@ -158,7 +154,6 @@ extension ViewController:UITableViewDelegate,UITableViewDataSource{
         }catch let error as NSError{
             print(error)
         }
-        
         cell.textLabel?.font = UIFont.systemFont(ofSize: 20)//字体大小
         return cell
     }
@@ -177,5 +172,4 @@ extension ViewController:UITableViewDelegate,UITableViewDataSource{
         navigationController?.pushViewController(ViewController2(), animated: true)
         tableView.deselectRow(at: indexPath, animated: true)
        }
-    
 }

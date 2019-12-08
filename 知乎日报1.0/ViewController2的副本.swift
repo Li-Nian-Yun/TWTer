@@ -14,12 +14,10 @@ import SDWebImage
 import WebKit
 
 class ViewController2: UIViewController {
-    
     fileprivate var dataModel:Main?
     fileprivate var currentTabelView:UITableView?
     fileprivate var detailDataModel:DetailData?
     fileprivate var dataArray:NSMutableArray?
-    
     let header = MJRefreshNormalHeader()
     var webView = WKWebView()
     
@@ -53,7 +51,6 @@ class ViewController2: UIViewController {
         view.addSubview(self.progressView)
     }
     
-    
     //    进度条
     lazy var progressView:UIProgressView = {
         let progress = UIProgressView()
@@ -81,6 +78,7 @@ class ViewController2: UIViewController {
                     print("错误")
             }
     }
+    
     @objc func pushComment(comment:UIBarButtonItem){
         navigationController?.pushViewController(commentViewController(), animated: true)
     }
@@ -95,10 +93,12 @@ extension ViewController2:WKNavigationDelegate{
             self.progressView.progress = Float(self.webView.estimatedProgress)
         }
     }
+    
     // 当内容开始返回时调用
     func webView(_ webView: WKWebView, didCommit navigation: WKNavigation!){
         
     }
+    
     // 页面加载完成之后调用
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!){
         /// 获取网页title
@@ -109,22 +109,19 @@ extension ViewController2:WKNavigationDelegate{
             self.progressView.isHidden = true
         }
     }
+    
     // 页面加载失败时调用
     func webView(_ webView: WKWebView, didFail navigation: WKNavigation!, withError error: Error){
-        
         UIView.animate(withDuration: 0.5) {
             self.progressView.progress = 0.0
             self.progressView.isHidden = true
         }
-        /// 弹出提示框点击确定返回
         let alertView = UIAlertController.init(title: "提示", message: "加载失败", preferredStyle: .alert)
         let okAction = UIAlertAction.init(title:"确定", style: .default) { okAction in
             _=self.navigationController?.popViewController(animated: true)
         }
         alertView.addAction(okAction)
         self.present(alertView, animated: true, completion: nil)
-        
     }
-    
 }
 

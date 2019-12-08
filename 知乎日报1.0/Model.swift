@@ -13,6 +13,7 @@ struct Index {
     var id = 0
 }
 var rowIndex = Index()
+
 // MARK: - Welcome
 struct Main: Codable {
     let date: String
